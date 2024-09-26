@@ -1,5 +1,5 @@
 # include <iostream>
-using namespce std;
+using namespace std;
 int main(){
     //count the number of digits in a given number
     int n;
@@ -10,4 +10,79 @@ int main(){
 num++;
 n = n/10;
     }cout<<num<<endl;
+
+    // calculate percentage of five subjects
+    float sub1 ,sub2, sub3, sub4 ,sub5;
+    cout<<"Enter marks of subject first"<<endl;
+    cin>>sub1;
+
+        cout<<"Enter marks of subject second"<<endl;
+    cin>>sub2;
+        cout<<"Enter marks of subject third"<<endl;
+    cin>>sub3;
+
+   cout<<"Enter marks of subject fourth"<<endl;
+    cin>>sub4;
+
+    cout<<"Enter marks of subject fifth"<<endl;
+    cin>>sub5;
+    float percentage =( sub1+sub2+sub3+sub4+sub5)/5;
+cout<<"percentage is equal to:"<<percentage<<endl;
+
+
+//calculate area of circle
+float radius ;
+cout<<"Enter radius"<<endl;
+cin>>radius;
+float area = 3.14*radius*radius;
+cout<<"Area of circle is equal to:"<<area<<endl;
+
+//calculating simple interest 
+int principal , rate ,time;
+cout<<"Enter principal:"<<endl;
+cin>>principal;
+cout<<"Enter rate of interest: " <<endl;
+cin>>rate;
+cout<<"Enter time :"<<endl;
+cin>>time;
+int simple_interest =(principal*rate*time)/100;
+cout<<"simple intersst is equal to:"<<simple_interest<<endl;
+
+//how can you output "alpha and "intern" in tow different lines
+// we can do so by using endl 
+string name = "Alpha";
+string name2 = "intern";
+cout<<name<<endl<<name2<<endl;
+
+// how much space does the following data types take
+//int - 4 bytes
+//bool- 1 bytes
+//float - 4 bytes
+
+// write a program to find the circumfrence of a circle with radius 10
+int radius = 10;
+float circumfrence = 2*3.14*radius;
+cout<<"circumfrence is equal to:"<<circumfrence<<endl;
+
+// take positive integer input and tell whether it is even or odd
+int num;
+cout<<"Enter integer"<<endl;
+cin>>num;
+if(num%2==0){
+    cout<<"Even number"<<endl;
+}else{
+    cout<<"odd number"<<endl;
 }
+
+//tell whether number is divisible by 5 or not
+int dig ;
+cout<<"Enter number"<<endl;
+cin>>dig;
+if(dig%5==0){
+    cout<<"divisible by 5";
+}else{
+    cout<<"Not divisible by 5";
+}
+
+
+    }
