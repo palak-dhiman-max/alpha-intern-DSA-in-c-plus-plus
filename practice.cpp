@@ -1,8 +1,8 @@
 # include <iostream>
 using namespace std;
 int main(){
-    //count the number of digits in a given number
-    int n;
+ //count the number of digits in a given number
+   int n;
     int num =0;
     cout<<"Enter your number"<<endl;
     cin>>n;
@@ -60,15 +60,15 @@ cout<<name<<endl<<name2<<endl;
 //float - 4 bytes
 
 // write a program to find the circumfrence of a circle with radius 10
-int radius = 10;
-float circumfrence = 2*3.14*radius;
+float radius2 = 10;
+float circumfrence = 2*3.14*radius2;
 cout<<"circumfrence is equal to:"<<circumfrence<<endl;
 
 // take positive integer input and tell whether it is even or odd
-int num;
+int num2;
 cout<<"Enter integer"<<endl;
-cin>>num;
-if(num%2==0){
+cin>>num2;
+if(num2%2==0){
     cout<<"Even number"<<endl;
 }else{
     cout<<"odd number"<<endl;
@@ -79,10 +79,76 @@ int dig ;
 cout<<"Enter number"<<endl;
 cin>>dig;
 if(dig%5==0){
-    cout<<"divisible by 5";
+    cout<<"divisible by 5"<<endl;
 }else{
-    cout<<"Not divisible by 5";
+    cout<<"Not divisible by 5"<<endl;
 }
 
+//given the radius of circle predict whether numerically area of circle is larger than  to circumfrence or not
+cout<<"Enter radius :"<<endl;
+float r;
+cin >>r;
+if(area>circumfrence){
+    float area = 3.14*r*r;
+float circumfrence = 2*3.14*r;
+cout<<"Area is greater than circumfrence:"<<"area is equal to:"<<area<<"circumfrence is equal to:"<<circumfrence<<endl;
 
+}
+
+// tell if integer is a three digit number or not
+cout<<"Enter integer: ";
+int dig1;
+cin>>dig1;
+if(dig1>=100 &&dig1<=999){
+    cout<<"It is a three digit number"<<endl;
+}else{
+    cout<<"Not a three digit number"<<endl;
+}
+
+//check if integer is divisible by 5 or 3
+
+cout<<"Enter your number"<<endl;
+int dig2;
+cin>>dig2;
+if(dig2%5==0 && dig2%3==0){
+    cout<<"Divisible by 5 and 3"<<endl;
+}else{
+    cout<<"not divisible by 3 and 5"<<endl;
+}
+
+// take input three integer and find greater of them
+int a,b,c;
+cin>>a;
+cin>>b;
+cin>>c;
+if(a>b && a>c){
+    cout<<"a is greater"<<endl;
+} else if(b>a && b>c){
+    cout<<"b is greater"<<endl;
+}else if ( c>a && c>b){
+    cout<<"c is greater"<<endl;
+}else{
+    cout<<"invalid"<<endl;
+}
+
+//wap to check whether a character is an alphabrt or not
+cout<<"Enter character"<<endl;
+char  char1;
+cin >>char1;
+if((char1>='a'&&char1<='z') || (char1>='A' && char1<='Z')){
+    cout<<"character is alphabet"<<endl;
+}else{
+    cout<<"not  an alphabet"<<endl;
+}
+
+//print absolute value of integer
+cout<<"Enter integer"<<endl;
+int dig3;
+cin>>dig3;
+if(dig3>=0){
+    cout<<"absolute value is"<<dig3;
+}else if(dig3<0){
+    dig3 = - dig3;
+    cout<<"absolute value is"<<dig3;
+    }
     }
