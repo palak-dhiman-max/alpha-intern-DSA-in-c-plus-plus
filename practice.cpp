@@ -50,9 +50,8 @@ cout<<"simple intersst is equal to:"<<simple_interest<<endl;
 
 //how can you output "alpha and "intern" in tow different lines
 // we can do so by using endl 
-string name = "Alpha";
-string name2 = "intern";
-cout<<name<<endl<<name2<<endl;
+
+cout<<"Alpha "<<endl<<"intern "<<endl;
 
 // how much space does the following data types take
 //int - 4 bytes
@@ -88,11 +87,18 @@ if(dig%5==0){
 cout<<"Enter radius :"<<endl;
 float r;
 cin >>r;
+float pie = 3.14;  
+  float area = pie*r*r;
+float circumfrence = 2*pie*r;
+
 if(area>circumfrence){
-    float area = 3.14*r*r;
-float circumfrence = 2*3.14*r;
+    
 cout<<"Area is greater than circumfrence:"<<"area is equal to:"<<area<<"circumfrence is equal to:"<<circumfrence<<endl;
 
+}else if(area<circumfrence){
+    cout<<"area is equal to circumfrence"<<endl;
+}else{
+    cout<<"invalid"<<endl;
 }
 
 // tell if integer is a three digit number or not
@@ -151,4 +157,76 @@ if(dig3>=0){
     dig3 = - dig3;
     cout<<"absolute value is"<<dig3;
     }
+
+    //find whether numerically the area of rectangle is greater than perimeter
+    int length ;
+    int breadth;
+    cout<<"Enter length"<<endl;
+    cin>>length;
+cout<<"Enter breadth"<<endl;
+cin>>breadth;
+int area1;
+int perimeter;
+    area1 = length*breadth;
+    perimeter = 2*(length+breadth);
+
+if(area1 > perimeter){
+
+    cout<<"area is greater then perimeter"<<endl;
+}else if(area1<perimeter){
+    cout<<"perimeter is greater" <<endl;
+}else{
+    cout<<"invalid"<<endl;
+}
+
+//check whether a triangle is equilateral scalene and isosceles
+int side1 ,side2,side3;
+cout<<"Enter side"<<endl;
+cin>>side1;
+cin>>side2;
+cin>>side3;
+if(side1==side2 && side1==side3 && side2==side3){
+    cout<<"Equilateral triangle"<<endl;
+}else if(side1==side2 || side1==side3 ||side2==side3){
+    cout<<"Isosceles triangle"<<endl;
+}else if(side1!=side2 && side2!=side3 &&side1!=side3){
+    cout<<"scalene triangle"<<endl;
+}else{
+    cout<<"invalid"<<endl;
+}
+
+//check whether the tow given points x and y are lies on x axis , y axis or origion
+int x,y;
+cout<<"Enter x and y :"<<endl;
+cin >>x;
+cin>>y;
+if(y==0 && x!=0){
+    cout<<"point lies on x axis"<<endl;
+}else if (x==0 && y!=0){
+    cout<<"point lies on y axis"<<endl;
+}
+else if(x==0 &&y==0){
+    cout<<"point lies on origion"<<endl;
+}
+else{
+    cout<<"invalid"<<endl;
+}
+
+// write a program to check whether all three points are lie on straight line or not
+int x1,y1,x2,y2,x3,y3;
+cout<<"x1 and y1"<<endl;
+cin>>x1>>y1;
+cout<<"x2 and y2"<<endl;
+cin>>x2>>y2;
+cout<<"x3 and y3"<<endl;
+cin>>x3>>y3;
+int slope1 = (y2-y1)/(x2-x1);
+int slope2 = (y3-y2)/(x3-x2);
+if(slope1==slope2){
+    cout<<"all three points are lie on a straight line"<<endl;
+}else{
+    cout<<"not lie on straigth line"<<endl;
+}
+
+
     }
