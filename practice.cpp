@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
  //count the number of digits in a given number
-   int n;
+  int n;
     int num =0;
     cout<<"Enter your number"<<endl;
     cin>>n;
@@ -227,6 +227,13 @@ if(slope1==slope2){
 }else{
     cout<<"not lie on straigth line"<<endl;
 }
-
+//loo 
+int n= 5;
+for(int i =1;i<=n;i++){
+    for(int j=1;j<=i;j++){
+        cout<<"*";
+    }
+    cout<<endl;
+}
 
     }
