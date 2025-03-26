@@ -78,6 +78,18 @@ sum = sum + result2;
 
 
          // question 9 - wap to print all the  unique combinations of 1,2,3 and 4.
+/*for(int i=1; i<=4; i++){
+        for(int j=1; j<=4; j++){
+                for(int k =1; k<=4; k++){
+                        for(int l=1; l<=4; l++){
+                                cout<<i<<j<<k<<l<<endl;
+                        }
+                }
+        }
+}*/
+
+
+//wap that will take tow number input and print their lcm and hcf
 
 
          // question 11 - display fibonnaci series 
@@ -120,11 +132,11 @@ while(i<=n){
                 continue;
                 
         }
-        if(sum<=300){
-                sum= sum +i;
-                 }else{
-                        break;
-                 }
+    sum=sum+i;
+    if(sum>=300){
+        sum=sum-i;
+        break;
+    }
 
 i++;
 }
@@ -216,6 +228,49 @@ n=n/10;
 10 hello world  
 */
 
+
+// question print the armstrong number in a given range .
+/*int upper ;
+int lower;
+cin>>lower>>upper;
+
+
+
+
+for( int i=lower ; i<=upper; i++){
+        int temp=i;
+        int digit=0;
+        double sum=0;
+// count the number of digits 
+while(temp !=0){
+        temp=temp/10;
+        digit++;
 }
+
+temp=i; // reset temp as it become zero above 
+
+// main logic
+
+while(temp !=0){
+sum = sum + pow(temp%10,digit);
+temp=temp/10;
+}
+
+if(sum==i){
+        cout<<i<<endl;
+       
+}
+        
+
+}
+
+  */
+
+ 
+
+    }
+
+
+
          
        
