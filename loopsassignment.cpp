@@ -89,9 +89,26 @@ sum = sum + result2;
 }*/
 
 
-//wap that will take tow number input and print their lcm and hcf
+// q-10  wap that will take tow number input and print their lcm and hcf
+cout<<"enter number:";  
+int num1,num2;
+cin>>num1>>num2;
+int result;
+int greater;
+if(num1 >num2){
+        greater = num1;
+}else{
+        greater = num2;
+}
 
-
+while(1){
+        if((num1 %greater==0) && (num2 %greater==0) ){
+                result=greater;
+break;
+        }else{
+                greater ++;
+        }
+}cout<<result;
          // question 11 - display fibonnaci series 
       
         
