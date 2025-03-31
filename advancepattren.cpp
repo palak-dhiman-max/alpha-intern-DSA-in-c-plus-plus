@@ -112,7 +112,63 @@ A     G
         }
        cout<<endl; 
     }*/
+
+    // butterfly pattern
+
+    int n;
+    cin>>n;
+    int p;
+    p=n;
+
+
+    //printing upper half pattern
+    for(int i=1; i<=n;i++){
+
+        // printing half pyramid
+        for(int j=1; j<=i ;j++){
+            cout<<"*"<<" ";
+
+        }
+
+        // printting space
+
+        for(int k=2*(p-1)-1;k>=1; k--){
+cout<<"  ";
+p--;
+        }
+
+        // reassigninig p
+        p=n-i;
+
+        //printing half pyramid
+        for(int t=1; t<=i;t++){
+            if(t==n){
+                continue;
+            }
+            cout<<"*"<<" ";
+        }
+
+        cout<<endl;
+    }
+//printing lower half pattern
+for(int i=0; i<=n; i++){
+    for(int j=1; j<=n-i; j++){
+        cout<<"*"<<" ";
+    }
+    
+
+
+for(int k=1; k<=2*i-1;k++){
+    cout<<"  ";
 }
 
+    for(int p=n-i;p>=1; p--){
+      if(p==n){continue;}
+        cout<<"*"<<" ";
+    }
+   cout<<endl;
 
- 
+
+}
+
+}
