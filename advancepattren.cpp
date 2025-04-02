@@ -115,7 +115,7 @@ A     G
 
     // butterfly pattern
 
-    int n;
+   /* int n;
     cin>>n;
     int p;
     p=n;
@@ -169,6 +169,74 @@ for(int k=1; k<=2*i-1;k++){
    cout<<endl;
 
 
+}*/
+
+// hollow diamond pattern
+/*
+int n;
+cin>>n;
+int t;
+t=n;
+
+// upper half of pattern
+for(int i=0; i<n; i++){
+    for(int j=1; j<n-i; j++){
+        cout<<" ";
+    }
+    if(i!=0){
+cout<<"*";}
+    for(int k=1; k<=2*i-1; k++){
+        cout<<" ";
+    }
+    cout<<"*";
+    cout<<endl;
 }
 
+//lower half of pattern
+for(int i=1; i<=n; i++){
+    for(int j=1; j<=i; j++){
+        cout<<" ";
+    }
+    if(i<n){
+    cout<<"*";}
+    
+// printing spaces
+
+for(int k=2*t-5;k>=1; k--){
+    cout<<" ";
+    
+            }
+            
+    
+            // reassigninig p
+            
+            if(t>=3){
+cout<<"*";}
+t=n-i;
+cout<<endl;
+}
+
+
+*/
+
+
+int n;
+cin>>n;
+for(int i=1; i<=n ;i++){
+    for(int j=1; j<=n-i; j++){
+cout<<" ";
+    }
+
+    for(int k=1; k<=i; k++){
+        cout<<char((i-(k-1))+64);
+            }
+           
+
+
+for(int p=2; p<=i;p++){
+    cout<<char(p+64);
+} 
+cout<<endl;
+
+ }
 }
