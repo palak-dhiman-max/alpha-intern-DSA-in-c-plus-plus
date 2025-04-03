@@ -219,8 +219,8 @@ cout<<endl;
 
 */
 
-
-int n;
+// pattern n0--3
+/*int n;
 cin>>n;
 for(int i=1; i<=n ;i++){
     for(int j=1; j<=n-i; j++){
@@ -239,4 +239,63 @@ for(int p=2; p<=i;p++){
 cout<<endl;
 
  }
+*/
+
+ // pattern no --8
+
+ /*int n;
+ cin>>n;
+ for(int i=1; i<=n; i++){
+
+ 
+ for(int j=1; j<=n-i; j++){
+cout<<" ";
+}
+
+cout<<i;
+if(i!=1){
+for(int k=1; k<=2*(i-1)-1;k++){
+    cout<<" ";
+}
+
+
+    cout<<i;}
+
+cout<<endl;
+
+ }
+
+*/
+ // pattern n0 --6
+/*
+ int n;
+ cin>>n;
+ int t=n;
+ for(int i=1; i<=n-1; i++){
+    for(int j=1; j<=i-1; j++){
+        cout<<" ";
+    }
+    cout<<"*";
+
+    for(int k=2*t-1; k>=1; k--){
+cout<<" ";
+    }
+    t=n-i;
+
+cout<<"*";
+
+    cout<<endl;
+ }
+for(int i=1; i<=n+5;i++){
+    cout<<" ";
+    
+    
+}
+cout<<endl;
+for(int i=1; i<=n;i++){
+    cout<<" ";
+    
+    
+}
+cout<<"*"; */
 }
