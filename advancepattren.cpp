@@ -298,4 +298,66 @@ for(int i=1; i<=n;i++){
     
 }
 cout<<"*"; */
+
+// pattern 
+
+
+// upper half
+int n;
+cin>>n;
+for(int i=1; i<=n; i++){
+    for(int j=1; j<=(n-i)+1; j++){
+        cout<<" ";
+    }
+    cout<<"*";
+
+    if(i!=1 ){
+    for(int k=1; k<(2*i-1)-1;k++){
+        
+        if(k==i-1){
+            cout<<"*";
+        }else{
+            cout<<" ";
+        }
+    }
+}
+
+if(i!=1){
+    cout<<"*";
+}
+
+    cout<<endl;
+}
+
+for(int i=1; i<=2*n+1; i++){
+cout<<"*";
+}
+cout<<endl;
+//lower half
+
+for(int i=n; i>=1; i--){
+    for(int j=1; j<=(n-i)+1; j++){
+        cout<<" ";
+    }
+    cout<<"*";
+
+    if(i!=1 ){
+    for(int k=1; k<(2*i-1)-1;k++){
+        
+        if(k==i-1){
+            cout<<"*";
+        }else{
+            cout<<" ";
+        }
+    }
+}
+
+if(i!=1){
+    cout<<"*";
+}
+
+    cout<<endl;
+}
+
+
 }
