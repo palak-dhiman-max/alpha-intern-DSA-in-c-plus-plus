@@ -88,8 +88,11 @@ int main (){
 // (we are just printing it) so there is no need to return anything
 
 // ques-6 can same function name be used for different functions without any conflict. 
-// we cannot did so because if we make same name of different function so compiler got
+// we cannot did so because if we make same name of different function having same parameters so compiler got
 // confused that to which function it call and it throw an error that function is already defined
+// but we can did so if parameters are different and function name is same by (method overriding function)
+
+
 
 
 
